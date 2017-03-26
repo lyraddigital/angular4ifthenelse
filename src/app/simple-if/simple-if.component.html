@@ -1,0 +1,7 @@
+<div *ngIf="showPanel; else notShown">
+    The panel is shown.
+</div>
+
+<ng-template #notShown>
+    The panel was not shown.
+</ng-template>

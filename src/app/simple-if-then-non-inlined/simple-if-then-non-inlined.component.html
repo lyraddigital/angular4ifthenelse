@@ -1,0 +1,9 @@
+<div *ngIf="show; then currentTemplate; else elseTemplate"></div>
+
+<ng-template #firstTemplate>First template shown</ng-template>
+<ng-template #secondTemplate>Second template shown</ng-template>
+<ng-template #elseTemplate>Else template shown</ng-template>
+
+<div>
+  <button (click)="switchPrimary()">Switch shown template</button>
+</div>
